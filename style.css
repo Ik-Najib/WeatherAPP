@@ -12,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    position: fixed;
 
 }
 .CityInput{
@@ -39,26 +40,64 @@ button:hover{
 }
 
 .app{
+    margin-top: 80px;
+    position: relative;
     background-color: rgb(160, 183, 230);
-    width: 70rem;
-    height: 40rem;
+    width: 75rem;
+    height: 45rem;
     border-radius: 15px;
     padding: 30px;
+    display: flex;
+    justify-content: center;
+
 }
 .city{
+    position: absolute;
     background-color: rgb(134, 141, 139);;
     font-size: 60px;
     height: fit-content;
     width: fit-content;
-    display: flex;
-
+    margin: 0;
+    left: 20rem;
+    top: 13rem;
+    display: block;
 }
+
+
 .temp{
-    background-color: aquamarine;
-    font-size: 45px;
+    position: absolute;
+    background-color: rgb(134, 141, 139);;
+  position: absolute;
+  display: flex;   
+  gap: 32%;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.pic{
+    position: absolute;
+    background: none;
     height: fit-content;
     width: fit-content;
+    display:block;
+    right: 7rem;
 }
+
+.infos {
+  position: absolute;
+  display: flex;   
+  gap: 32%;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  bottom: 40%;
+    
+
+}
+
+
+
+
 
 
 
