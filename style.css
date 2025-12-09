@@ -1,0 +1,64 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial narrow', Arial, sans-serif;
+    background-color: rgb(169, 187, 193);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.Search{
+    margin-top: 0.5%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.CityInput{
+    padding: 20px;
+    width: 36rem;
+    font-weight: narrow;
+    border-radius: 30px;
+    border: 5px rgb(0, 0, 0);
+    font-size: 18px;
+    background-color: aliceblue;
+}
+
+button{
+    padding:20px;
+    width: 8rem;
+    border: 5px black;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: aliceblue;
+    cursor: pointer;   
+}
+
+button:hover{
+    background-color: rgb(189, 189, 189);
+}
+
+.app{
+    background-color: rgb(160, 183, 230);
+    width: 70rem;
+    height: 40rem;
+    border-radius: 15px;
+    padding: 30px;
+}
+.city{
+    background-color: rgb(134, 141, 139);;
+    font-size: 60px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+
+}
+.temp{
+    background-color: aquamarine;
+    font-size: 45px;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+
