@@ -1,68 +1,124 @@
-.body{
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     background-color: azure;
     font-family: 'Times New Roman', Times, serif;
     transition: 0,6s;
+    align-items: center;
+}.card{
+    position: absolute;
+    display: flex; 
+    flex-direction:column;
+    background-color: rgb(117, 56, 56);
+    width: 70%;
+    height: 80%;
+    align-items: center;
+    padding-top: 30px;
+    top: 10%;
 }
 
 .container1{
-    margin: 5px;
-    margin-top: 1.5%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: antiquewhite;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 20px;
     transition: all 0.3s ease;
     transform: scale(1);
-    gap: 25%
-
+    width: 90%;
 }
 
 .logo{
     display: flex;
     align-items: center;
-    font-size: 60px;
-    margin-top: rem;
+    font-size: 35px;
 }
 .logo:hover{
 transform: scale(1.05);
 cursor: pointer;
 }
-.search{
-    display: flex;
-    background-color: none;
-    width: 50rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
 
+
+.search{
+    align-items: center;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    gap: 20px;
 }
 
 .cityinput{
-background-color: aliceblue;
-width: 35rem;
-height: 3rem;
+background-color: white;
+opacity: 30%;
+width: 500px;
+height: 50px;
 border: 2px solid black ;
 border-radius: 20px;
+
 }
 .cityinput:hover{
     transform: scale(1.05);
 }
-@media  (max-width: 767px) {
- .cityinput{
-    width: 200px;
- }
-}
-
 .btn{
 background-color: aliceblue;
-width: 8rem;
-height: 3rem;
+width: 100px;
+height: 50px;
 border: 2px solid black;
 border-radius: 20px;
+opacity: 30%;
+
 }
+
 .btn:hover{
         transform: scale(1.05);
 cursor: pointer;
 }
+
+
+.info{
+width: 80%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+
+
+
+@media  (max-width: 767px) {
+
+    .container1{
+        display: sticky;
+        border-radius: 0%;
+        gap: 0px;
+        width: 100%;
+        height: 15%;
+
+    }
+        .logo{
+        font-size: 20px;
+        margin-right: 0px 50px;
+        
+    }
+    .search{
+        margin: 0px;
+        gap: 15px;
+        width: 100%;
+
+    }
+ .cityinput{
+    width: 60%;
+    left: 2px;
+    right:2x
+ }
+ .btn{
+    width: 50px;
+    border-radius: 50%;
+    background-image: url();
+    } 
+}
+
+
+
