@@ -1,41 +1,19 @@
-const Search = document.querySelector("Search");
-const cityinput = document.querySelector("CityInput");
-const app = document.querySelector("app");
-const apikey = "32998debd987a19261fff14861a17cab"
+let submit = document.querySelector(".cityinput");
+let city = document.getElementById("city")
+let temp = document.getElementById("temp");
+let humidity = document.getElementById("humidity");
+let desc = document.getElementById("desc");
 
-Search.addEventListener("submit", event => {
-    event.preventDefault();
-    const city = cityinput.value;
 
-    if (city){
-        displayerror("hello")
-    }else {
-        displayerror("enter a valid city")
-    }
-
-});
-
-async function getweatherdata(city) {
-    
+function weatherdata (){
+    let cityValue = submit.value;
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=32998debd987a19261fff14861a17cab&units=metric`)
+    .then(response => response.json())
+    .then(data => {
+        city.textContent = data.name;
+        temp.textContent = data.main.temp + "°C";
+        humidity.textContent = data.main.humidity+ "%";
+        desc.textContent = data.weather[0].description;
+    });
 }
 
-function displayWeatherInfo(){
-
-}
-
-function getweatherpic (id){
-
-}
-
-function displayerror(msg){
-
-    const errordisplay = document.createElement("p");
-    errordisplay.textContent = msg;
-    errordisplay.classList.add("errordisplay");
-
-    app.textContent = "hjklhjke";
-    app.style.display = "flex"
-    errordisplay.style.font = "58px";
-    
-    app.appendChild(errordisplay);
-}

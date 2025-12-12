@@ -1,3 +1,4 @@
+<!DOCTYPE html5>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,25 +11,27 @@
     <div class="card">
         <div class = "container1">
             <div class = "logo">TWeather</div>
-            <form class ="Search">
+            <div class ="Search">
             <input type="text" class="cityinput" placeholder="Enter city"></input>
-            <button type="submit" class = "btn">Search</button>
-            </form>
+            <button  onclick="weatherdata()" type="submit" class = "btn">Search</button>
+            </div>
         </div>
-        <div class = container2>
-            <div class="city"><h1 class = "city">oujda</h1></div>
-                <div class = "infocontainer">
-                    <div class="info">
-                    <div class = "cont1"><h1 class = "humidiy">15%</h1></div>
-                    <div class = "cont2"><h1 class = "temp">56</h1></div>
-                    <div class = "cont3"><h1 class = "desc">cloudy</h1></div>
-                    </div>
-            </div>            
+
+        <div class="container2">
+    <div id="city" class="city"><h1 class="city">---</h1></div>
+    <div class="infocontainer">
+        <div class="info">
+            <div class="cont1"><h1 id="humidity" class="humidity" style="margin: 0px;">---</h1></div>
+            <div class="cont2"><h1 id="temp" class="temp" style="margin: 0px;">---</h1></div>
+            <div class="cont3"><h1 id="desc" class="desc" style="margin: 0px;">---</h1></div>
         </div>
+    </div>
+</div>
 
 
 
             
     </div>
 </body>
+<script src="index.js"></script>
 </html>
